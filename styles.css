@@ -19,8 +19,8 @@ img{
     margin: 0% auto 1% auto;
     border: 0;
 }
-.logo-img{
-  float: left;
+.logo{
+  max-width: 400px;
 }
 nav{
 }
@@ -338,8 +338,6 @@ padding-bottom: 56.25%; /*16:9*/
 
 /*START DESKTOP STYLES */
 
-
-/* Tablet to Desktop */
 @media (min-width: 768px) {
   .mobile-btn {
     display: none;
@@ -358,6 +356,9 @@ padding-bottom: 56.25%; /*16:9*/
     }
 }
 @media only screen and (min-width: 700px) {
+    .logo{
+      max-width: 500px;
+    }
     .form-container{
       /*CHANGE WIDTH of FORM TO YOUR PREFERENCE */
       width:70%;
