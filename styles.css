@@ -121,18 +121,12 @@ nav{
     grid-gap: 70px;
   }
 }
-/* Tablet to Desktop */
-@media (min-width: 768px) {
-  .mobile-btn {
-    display: none;
-  }
-}
 
 
 .hero{
   background-image: url("img/beach.jpg");
   /* photoshop composite done by me */
-  height: 80vh;
+  min-height: 80vh;
   background-size: cover;
   background-position: center 80%;
   position: relative;
@@ -145,34 +139,16 @@ nav{
   background-size: cover;
   background-position: center 57%;
   position: relative;
-  font-size: 1em;
 }
 
 .contact-hero{
   background-image: url("img/contact.jpg");
   /* https://unsplash.com/photos/uVPV_nV17Tw */
-  height: 600px;
+  min-height: 600px;
   background-size: cover;
   background-position: center 57%;
   position: relative;
 }
-
-/*
-.about-hero h2{
-  color: white;
-  line-height: 1.9em;
-  text-align: left;
-  font-size: 5em;
-  margin-top: 0px;
-  margin-bottom: 31px;
-}
-
-.about-hero p{
- color:white;
- text-align: left;
- font-size: 0.9em;
-}
- */
 
 .hero h2, .about-hero h2, .contact-hero h2{
   color: white;
@@ -181,27 +157,24 @@ nav{
   margin-bottom: 20px;
   padding-top: 20px;
   text-shadow: 0 0 40px black;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 .hero p, .about-hero p, .contact-hero p{
  color:white;
  text-align: left;
- font-size: 1.3em;
+ font-size: 1.2em;
  line-height: 1.4;
- text-shadow: 0 0 40px black;
+ text-shadow: 0 0 30px black;
 
-}
-
-h3{
-  color: white;
-  margin-top: 0;
-  padding-top: 20px;
 }
 
 .wrapper{
   margin: 0 20px;
   width:70%;
 
+}
+.hero .wrapper{
+    max-width:500px;
 }
 
 main{
@@ -326,55 +299,6 @@ padding-bottom: 56.25%; /*16:9*/
   hieght:100%;
 }
 
-/*START DESKTOP STYLES */
-@media only screen and (min-width: 1000px) {
-    .form-container{
-      /*CHANGE WIDTH of FORM TO YOUR PREFERENCE */
-      width:50%;
-    }
-    input{
-     /* CHANGE WIDTH TO YOUR PREFERENCE */
-     width:60%;
-    }
-    button{
-        margin-top: 2%;
-        margin-bottom: 20%;
-    }
-    .hero{
-      background-image: url("img/beach.jpg");
-      /* photoshop composite done by me */
-      height: 78vh;
-      background-size: cover;
-      background-position: center 80%;
-      position: relative;
-    }
-    .about-hero{
-      background-image: url("img/about.jpg");
-      /* https://unsplash.com/photos/R_J6KjC68E4 */
-      height: 78vh;
-      background-size: cover;
-      background-position: center 57%;
-      position: relative;
-      font-size: 1em;
-    }
-    .about-wrapper{
-      text-shadow: 0 0 40px black;
-    }
-    .wrapper{
-      margin: 0 2%;
-      width:50%;
-
-    }
-    .flexItem{
-        flex-basis: 300px;
-        flex-grow:1;
-        margin: 1% 10px;
-        background: rgb(255, 255, 255, 0.5);
-        padding:30px;
-    }
-}
-
-
 @media screen and (min-width: 400px)
 {
   #logo{
@@ -385,75 +309,6 @@ padding-bottom: 56.25%; /*16:9*/
   .mobile-btn{
     font-size: 20px;
   }
-}
-
-@media screen and (min-width: 700px) {
-
-        #logo{
-        padding-top: 0px;
-        }
-        .map{
-          width: 95%;
-        }
-        .logo {
-          /* width:350px; */
-        }
-        img{
-
-        }
-
-        .flexItem{
-          margin: 5px;
-        }
-
-
-        .hero h2, .about-hero h2, .contact-hero h2{
-          font-size: 3em;
-          line-height: 1.1em;
-          padding-top: 28px;
-        }
-
-        button{
-
-            font-size: 1em;
-        }
-        .wrapper-container{
-          width:90%;
-          margin-left: auto;
-          margin-right: auto;
-          display: block;
-        }
-}
-
-@media screen and (min-width: 1000px){
-
-  .hero h2, .about-hero h2, .contact-hero h2{
-    font-size: 4em;
-  }
-
-
-  .hero p, .about-hero, .contact-hero{
-    font-size: 2em;
-    line-height: 1.5em;
-  }
-
-  button{
-    font-size: 1.7em;
-  }
-
-}
-
-@media screen and (min-width: 1300px){
-  .hero p{
-    font-size: 2em;
-
-  }
-
-
-  footer nav{
-    text-align: center;
-  }
-
 }
 
 @media (min-width: 48em) {
@@ -471,4 +326,70 @@ padding-bottom: 56.25%; /*16:9*/
   .header .menu-icon {
     display: none;
   }
+}
+
+/*START DESKTOP STYLES */
+
+
+/* Tablet to Desktop */
+@media (min-width: 768px) {
+  .mobile-btn {
+    display: none;
+  }
+}
+@media only screen and (min-width: 600px) {
+    .hero h2, .about-hero h2, .contact-hero h2{
+      text-shadow: 0 0 40px black;
+      font-size: 3em;
+    }
+    .hero p, .about-hero p, .contact-hero p{
+     font-size: 1.5em;
+     line-height: 1.4;
+     text-shadow: 0 0 30px black;
+
+    }
+}
+@media only screen and (min-width: 700px) {
+    .form-container{
+      /*CHANGE WIDTH of FORM TO YOUR PREFERENCE */
+      width:70%;
+    }
+    input{
+     /* CHANGE WIDTH TO YOUR PREFERENCE */
+     width:60%;
+    }
+    button{
+        margin-top: 2%;
+        margin-bottom: 20%;
+    }
+    .hero{
+      height: 78vh;
+    }
+    .about-hero{
+      height: 78vh;
+    }
+    .about-wrapper{
+      text-shadow: 0 0 40px black;
+    }
+    .wrapper{
+      margin: 0 2%;
+      width:60%;
+    }
+    .hero h2, .about-hero h2, .contact-hero h2{
+      text-shadow: 0 0 40px black;
+      font-size: 4em;
+    }
+    .hero p, .about-hero p, .contact-hero p{
+     font-size: 2em;
+     line-height: 1.4;
+     text-shadow: 0 0 30px black;
+
+    }
+    .flexItem{
+        flex-basis: 300px;
+        flex-grow:1;
+        margin: 1% 10px;
+        background: rgb(255, 255, 255, 0.5);
+        padding:30px;
+    }
 }
