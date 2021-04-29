@@ -1,0 +1,498 @@
+ @import url("https://use.typekit.net/slm8iic.css");
+
+body{
+  margin: 0;
+  font-family: Century Gothic, sans-serif;
+  background: rgb(25,79,144);
+}
+p{
+  color:white;
+}
+a {
+  color: White;
+  font-family: "Open Sans", sans-serif;
+}
+img{
+    width: 100%;
+    display: block;
+    margin: 0% auto 1% auto;
+    border: 0;
+}
+.logo-img{
+  float: left;
+}
+nav{
+}
+#navbar {
+  display: grid;
+  min-height: 57px;
+  grid-auto-flow: column;
+  background-color: rgb(25,79,144);
+  color:white;
+/*   grid-gap: 1.5em; */
+  /* padding: 0 40px; */
+  padding: 0 40px 0 26px;
+  -webkit-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+  -moz-box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+  box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
+  border-bottom: 10px solid rgb(255,198,0);
+}
+#navbar a{
+  color:white;
+}
+#logo {
+  display: grid;
+  justify-content: space-between;
+  align-content: center;
+  font-family: "aviano-sans", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+.mobile-btn{
+  font-size:30px;
+  cursor:pointer;
+  font-weight:bold;
+  justify-content:end;
+}
+#links {
+  display: grid;
+  justify-content: right;
+  align-content: center;
+  grid-auto-flow: column;
+/*   grid-gap: 1.5em; */
+  font-family: "Open Sans", sans-serif;
+}
+#links a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding:20px 10px;
+}
+#links a:hover {
+  color:black;
+  background: rgb(255,198,0);
+}
+/* =======================
+******* Mobile Menu ******
+========================*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(25,79,144);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: black;
+  background: rgb(255,198,0)
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/* Mobile to Tablet  */
+@media (min-width: 320px) and (max-width: 767px) {
+  #links,
+  .mobile-menu {
+    display: none;
+  }
+  #logo {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    grid-gap: 70px;
+  }
+}
+/* Tablet to Desktop */
+@media (min-width: 768px) {
+  .mobile-btn {
+    display: none;
+  }
+}
+
+
+.hero{
+  background-image: url("img/beach.jpg");
+  /* photoshop composite done by me */
+  height: 408px;
+  background-size: cover;
+  background-position: center 80%;
+  position: relative;
+}
+
+.about-hero{
+  background-image: url("img/about.jpg");
+  /* https://unsplash.com/photos/R_J6KjC68E4 */
+  min-height: 600px;
+  background-size: cover;
+  background-position: center 57%;
+  position: relative;
+  font-size: 1em;
+}
+
+.contact-hero{
+  background-image: url("img/contact.jpg");
+  /* https://unsplash.com/photos/uVPV_nV17Tw */
+  height: 600px;
+  background-size: cover;
+  background-position: center 57%;
+  position: relative;
+}
+
+/*
+.about-hero h2{
+  color: white;
+  line-height: 1.9em;
+  text-align: left;
+  font-size: 5em;
+  margin-top: 0px;
+  margin-bottom: 31px;
+}
+
+.about-hero p{
+ color:white;
+ text-align: left;
+ font-size: 0.9em;
+}
+ */
+
+.hero h2, .about-hero h2, .contact-hero h2{
+  color: white;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  text-shadow: 0 0 40px black;
+
+}
+.hero p, .about-hero p, .contact-hero p{
+ color:white;
+ text-align: left;
+ font-size: 1.3em;
+ line-height: 1.4;
+ text-shadow: 0 0 40px black;
+
+}
+
+h3{
+  color: white;
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.wrapper{
+  margin: 0 20px;
+  width:70%;
+
+}
+
+main{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.flexItem{
+  flex-basis: 300px;
+  flex-grow: 1;
+  margin: 2px;
+  background-color: rgb(255, 255,255, 0.5);
+  padding:30px;
+}
+
+
+
+footer{
+  background:rgb(25,79,144);
+  padding: 26px;
+  border-top: 10px solid rgb(255,198,0);
+  text-align: center;
+}
+footer a{
+  text-decoration: none;
+  text-align: center;
+}
+
+footer p{
+color:white;
+}
+
+footer a{
+  color: white;
+  margin: 10px
+
+}
+
+footer nav{
+  background: rgb(25,79,144);
+  /* height: 60px; */
+  text-align: center;
+  font-family: "Work Sans", Helvetica, sans-serif;
+  border: 0;
+  padding: 20px 20px;
+  display: inline-block;
+
+}
+
+/* map styles */
+.map{
+  width:85%;
+  margin: auto;
+  display: block;
+}
+
+
+/* START MOBILE FORM STYLES */
+.form-container{
+  margin: 0px auto;
+/*  WIDTH 100%  FOR MOBILE DEVICES*/
+  width:90%;
+  display:block;
+  font-size:1em;
+}
+form p{
+  margin-bottom:5px;
+  color:white;
+}
+label{
+  display:block;
+  color: white;
+}
+#newsletter input{
+  display:inline;
+  width:auto;
+}
+input{
+  /* FOR MOBILE use WIDTH:100% */
+  width:100%;
+  padding:1.7%;
+  margin:1.5% 0;
+  font-size: 1em;
+  border-radius: 4px;
+  border:1px solid #ccc;
+  box-sizing: border-box;
+}
+textarea{
+  min-height:100px;
+   /* FOR MOBILE use WIDTH:100% */
+  width: 100%;
+  padding: 2%;
+  margin: 1.5% 0;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+button{
+  background: rgb(255,198,0);
+  border: 1px solid black;
+  border-radius: 4px;
+  color:black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding:5px 20px;
+  font-size: 1em;
+}
+/*        END MOBILE FORM STYLES */
+
+
+.video{
+position: relative;
+height: 0;
+padding-bottom: 56.25%; /*16:9*/
+}
+.video iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width:100%;
+  hieght:100%;
+}
+
+/*START DESKTOP STYLES */
+@media only screen and (min-width: 1000px) {
+    .form-container{
+      /*CHANGE WIDTH of FORM TO YOUR PREFERENCE */
+      width:50%;
+    }
+    input{
+     /* CHANGE WIDTH TO YOUR PREFERENCE */
+     width:60%;
+    }
+    button{
+        margin-top: 2%;
+        margin-bottom: 20%;
+    }
+    .hero{
+      background-image: url("img/beach.jpg");
+      /* photoshop composite done by me */
+      height: 78vh;
+      background-size: cover;
+      background-position: center 80%;
+      position: relative;
+    }
+    .about-hero{
+      background-image: url("img/about.jpg");
+      /* https://unsplash.com/photos/R_J6KjC68E4 */
+      height: 78vh;
+      background-size: cover;
+      background-position: center 57%;
+      position: relative;
+      font-size: 1em;
+    }
+    .about-wrapper{
+      text-shadow: 0 0 40px black;
+    }
+    .flexItem{
+        flex-basis: 300px;
+        flex-grow:1;
+        margin: 1% 10px;
+        background: rgb(255, 255, 255, 0.5);
+        padding:30px;
+    }
+}
+
+
+@media screen and (min-width: 400px)
+{
+  #logo{
+    font-size: 20px;
+    padding-top: 15px;
+    grid-template-columns: auto 6px
+  }
+  .mobile-btn{
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+
+        #logo{
+        padding-top: 0px;
+        }
+        .map{
+          width: 95%;
+        }
+        .logo {
+          /* width:350px; */
+        }
+        img{
+
+        }
+
+        .flexItem{
+          margin: 5px;
+        }
+
+        .wrapper{
+          position: absolute;
+          top: -9px;
+          left:5%;
+          text-shadow: 0 0 5px black;
+        }
+
+        .hero h2, .about-hero h2, .contact-hero h2{
+          font-size: 3em;
+          line-height: 1.1em;
+          padding-top: 28px;
+        }
+
+        .about-hero p {
+          color: white;
+          text-align: left;
+          font-size: 1em;
+        }
+
+        button{
+
+            font-size: 1em;
+        }
+
+
+        .wrapper-container{
+          width:90%;
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+        }
+}
+
+@media screen and (min-width: 1000px){
+
+  .about-hero h2{
+    font-size: 7em;
+  }
+
+  .about-hero p {
+    font-size: 1.3em;
+  }
+  .hero h2{
+    font-size: 7em;
+    line-height: 0.9;
+  }
+
+  .hero p{
+    font-size: 2em;
+    line-height: 1em;
+  }
+
+  button{
+    font-size: 1.7em;
+  }
+
+  .hero{
+    height: 100vh;
+  }
+
+  .about-hero{
+    height: 120vh;
+  }
+
+}
+
+@media screen and (min-width: 1300px){
+  .hero p{
+    font-size: 2em;
+
+  }
+
+
+  footer nav{
+    text-align: center;
+  }
+
+}
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
