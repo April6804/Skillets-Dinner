@@ -135,7 +135,7 @@ nav{
 .about-hero{
   background-image: url("img/about.jpg");
   /* https://unsplash.com/photos/R_J6KjC68E4 */
-  min-height: 600px;
+  min-height: 400px;
   background-size: cover;
   background-position: center 57%;
   position: relative;
@@ -144,7 +144,7 @@ nav{
 .contact-hero{
   background-image: url("img/contact.jpg");
   /* https://unsplash.com/photos/uVPV_nV17Tw */
-  min-height: 600px;
+  min-height: 400px;
   background-size: cover;
   background-position: center 57%;
   position: relative;
@@ -181,6 +181,11 @@ main{
     margin: 20px;
     display: flex;
     flex-wrap: wrap;
+    font-size: 1.2em;
+}
+.blurb{
+    width:80%;
+    margin: auto;
 }
 .flexItem{
   flex-basis: 300px;
@@ -354,19 +359,24 @@ padding-bottom: 56.25%; /*16:9*/
       /*CHANGE WIDTH of FORM TO YOUR PREFERENCE */
       width:70%;
     }
+    .form-container,.map{
+        flex-basis: 45%;
+        flex-grow:1;
+        margin: 1% 10px;
+    }
     input{
      /* CHANGE WIDTH TO YOUR PREFERENCE */
      width:60%;
     }
     button{
         margin-top: 2%;
-        margin-bottom: 20%;
+        margin-bottom: 2%;
     }
     .hero{
       height: 78vh;
     }
     .about-hero{
-      height: 78vh;
+      /* height: 78vh; */
     }
     .about-wrapper{
       text-shadow: 0 0 40px black;
@@ -392,4 +402,5 @@ padding-bottom: 56.25%; /*16:9*/
         background: rgb(255, 255, 255, 0.5);
         padding:30px;
     }
+
 }
