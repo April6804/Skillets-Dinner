@@ -388,6 +388,9 @@ padding-bottom: 56.25%; /*16:9*/
       margin: 0 2%;
       width:60%;
     }
+    .blurb{
+        font-size: 1.3em;
+    }
     .hero h2, .about-hero h2, .contact-hero h2{
       text-shadow: 0 0 40px black;
       font-size: 4em;
@@ -396,12 +399,12 @@ padding-bottom: 56.25%; /*16:9*/
      font-size: 2em;
      line-height: 1.4;
      text-shadow: 0 0 30px black;
-
     }
     .flexItem{
         flex-basis: 300px;
         padding:30px;
     }
+
     footer a{
         display: inline-block;
     }
