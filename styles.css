@@ -139,6 +139,7 @@ nav{
   background-size: cover;
   background-position: center 57%;
   position: relative;
+  padding-bottom:15px;
 }
 
 .contact-hero{
@@ -148,6 +149,8 @@ nav{
   background-size: cover;
   background-position: center 57%;
   position: relative;
+  padding-bottom:15px;
+
 }
 
 .hero h2, .about-hero h2, .contact-hero h2{
@@ -229,19 +232,12 @@ footer nav{
 
 }
 
-/* map styles */
-.map{
-  width:85%;
-  margin: auto;
-  display: block;
-}
-
 
 /* START MOBILE FORM STYLES */
 .form-container{
   margin: 0px auto;
 /*  WIDTH 100%  FOR MOBILE DEVICES*/
-  width:90%;
+  width:100%;
   display:block;
   font-size:1em;
 }
@@ -290,6 +286,12 @@ button{
 }
 /*        END MOBILE FORM STYLES */
 
+/* map styles */
+.map{
+  width:100%;
+  margin: auto;
+  display: block;
+}
 
 .video{
 position: relative;
