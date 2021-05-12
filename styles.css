@@ -161,7 +161,6 @@ nav{
   margin-bottom: 20px;
   padding-top: 20px;
   text-shadow: 0 0 40px black;
-  font-size: 2em;
 }
 .hero p, .about-hero p, .contact-hero p{
  color:white;
@@ -317,6 +316,15 @@ padding-bottom: 56.25%; /*16:9*/
   .mobile-btn{
     font-size: 20px;
   }
+
+  .hero h2, .about-hero h2, .contact-hero h2{
+    text-shadow: 0 0 30px black;
+    font-size: 3em;
+    line-height: 1em;
+  }
+    .hero p, .about-hero p, .contact-hero p{
+      text-shadow: 0 0 40px black;
+    }
 }
 
 @media (min-width: 48em) {
@@ -395,10 +403,11 @@ padding-bottom: 56.25%; /*16:9*/
     .hero h2, .about-hero h2, .contact-hero h2{
       text-shadow: 0 0 40px black;
       font-size: 4em;
+      line-height: 1em;
     }
     .hero p, .about-hero p, .contact-hero p{
-     font-size: 2em;
-     line-height: 1.4;
+     font-size: 1.2em;
+     line-height: 1.1em;
      text-shadow: 0 0 30px black;
     }
     .flexItem{
